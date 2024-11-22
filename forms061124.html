@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in html</title>
+    <style>
+    a{
+        text-decoration: none;
+        margin-left: 120px;
+        color: cornsilk;
+    }
+    a:hover{
+        color: rgb(12, 208, 41);
+    }
+    nav{
+        padding-top: 35px;         
+    }
+    header{
+        background-color: rgb(136, 61, 7);
+        border-radius: 5px;
+        color: rgb(222, 241, 10);
+        text-shadow: 0px 7px 5px black;
+        font-variant: small-caps;
+        display: grid;
+        grid-template-columns: 20% 80%;   
+    }
+
+    body{
+        height: 1500px;
+        background-color: #e4dddd;
+    }
+    img{
+        display: block;
+        margin: auto;
+        /* margin-top: 50px; */
+    }
+    #div1{
+        background-color:#ffffff;
+        border: 2px solid rgb(233, 234, 229);
+        width: 330px;
+        height: 250px;
+        text-align: center;
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+        margin-bottom: 300px;
+    }
+    #para1{
+        font-size: larger;
+    }
+    #email{
+        width: 290px;
+        height: 35px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        border:2px solid rgb(233, 234, 229);
+    }
+    #password{
+        width: 290px;
+        height: 35px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        border:2px solid rgb(233, 234, 229); 
+    }
+    #form1 input{
+        border-radius: 4px;
+
+    }
+    #loginbutton{
+        width: 310px;
+        height: 35px;
+        background-color: #166fe5;
+        color: white;
+        border-radius: 2px;
+        border-color: #166fe5;
+        margin-bottom: 10px;
+    }
+    #loginbutton:hover{
+        background-color: #0a59c1;
+    }
+    #a_form1{
+        font-size: small;
+    }
+    
+    /* div2 */
+    #div2{
+        background-color:#ffffff;
+        border: 2px solid rgb(233, 234, 229);
+        width: 350px;
+        height: 480px;
+        text-align: center;
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+    }
+    #fname{
+        width: 135px; 
+        height: 25px; 
+        border-radius: 5px; 
+        border:2px solid rgb(233, 234, 229); 
+        margin-left: auto;
+        margin-right: 3px;
+        padding-left: 15px;
+    }
+    #sname{
+        width: 135px; 
+        height: 25px; 
+        border-radius: 5px; 
+        border:2px solid rgb(233, 234, 229); 
+        margin-right: auto;
+        margin-left: 3px;
+        padding-left: 15px;
+    }
+    #dob{
+        font-size: x-small;
+    }    
+    #date{
+        width: 103px;
+        height: 28px;
+        border-radius: 5px;
+        border-color: rgb(233, 234, 229);
+        
+    }
+    #month{
+        width: 103px;
+        height: 28px;
+        border-radius: 5px;
+        border-color: rgb(233, 234, 229);
+
+    }
+    #year{
+        width: 103px;
+        height: 28px;
+        border-radius: 5px;
+        border-color: rgb(233, 234, 229);
+    }
+    #genderCategory{
+        font-size: x-small;
+    } 
+    #female{ 
+        display: inline-flex;
+        border: 2px solid;
+        width: 80px; 
+        height: 20px; 
+        border-radius: 5px; 
+        border-color: #e9e4e4; 
+        margin-left:3px;
+        padding-left: 20px;
+        justify-content: space-between;
+    }
+    #male{
+        display: inline-flex;
+        border: 2px solid;
+        width: 80px; 
+        height: 20px; 
+        border-radius: 5px; 
+        border-color: #e9e4e4; 
+        padding-left: 20px;
+        justify-content: space-between;
+    }
+    #custom{
+        display: inline-flex;
+        border: 2px solid;
+        width: 80px; 
+        height: 20px; 
+        border-radius: 5px; 
+        border-color: #e9e4e4; 
+        margin-right: 3px;
+        padding-left: 20px;
+        justify-content: space-between;
+    }
+    #number_email{
+        padding-left: 20px;
+        background-color:#ffffff;
+        border: 2px solid rgb(233, 234, 229);
+        width: 290px;
+        height: 25px;
+        border-radius: 5px;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+    }
+    #newPassword{
+        padding-left: 20px;
+        background-color:#ffffff;
+        border: 2px solid rgb(233, 234, 229);
+        width: 290px;
+        height: 25px;
+        border-radius: 5px;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #paragraph1{
+        font-size: x-small;
+        margin-bottom: 10px;
+    }
+    #paragraph2{
+        font-size: x-small;
+    }
+    #SingUp{
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 2px solid rgb(4, 144, 4);
+        width: 150px;
+        height: 25px;
+        background-color: rgb(4, 144, 4);
+        color: white;
+        font-size:medium;
+        margin-bottom: 10px;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://www.achieversit.com/"><img src="achievers It logo.png" id="headerimg" alt="achieversIt"></a>
+        <nav>
+        <a href="./TextFormatting.html" class="linkstofiles">Text-formatting</a>
+        <a href="./lists.html">Lists in html</a>
+        <a href="./multimediaConcept.html" class="linkstofiles">Multimedia in html</a>
+        <a href="./tables.html" class="linkstofiles">tables in html</a>
+        <a href="./links.html" class="linkstofiles">Links in html</a>
+        </nav>
+    </header>
+    <img src="achievers It logo.png" alt="achieversIt">
+
+    <!-- div1 -->
+    <div id="div1">
+        <p id="para1">Log in to AchieversIt</p>
+        <form action="#" id="form1">
+            <input type="text" id="email" placeholder="Email address or phone number" required> <br>
+            <input type="password" id="password" placeholder="Password" required> <br>
+            <input type="submit" value="Log in" id="loginbutton" > <br> 
+            <a href="#" style="color: rgb(7, 97, 233); text-decoration: none;" id="a_form1">Forgotten password?</a>
+            <a href="#" style="color: rgb(7, 97, 233); text-decoration: none;" id="a_form1">Sign up for AchieversIt</a> 
+        </form>
+    </div> <br>
+
+
+    <!-- create a new account page! -->
+    <img src="achievers It logo.png" alt="achieversIt">
+
+    <!-- div2 -->
+    <div id="div2">
+        <h2 style="font-size: larger; margin-bottom: 10px;">Create a new account</h2>
+        <p style="font-size: smaller; color: rgb(101, 97, 97);">It's quick and easy.</p>
+        <hr>
+        <div style="display:flex; align-items:center;">
+        <input type="text" name="fname" id="fname" placeholder="First name" required>
+        <input type="text" name="sname" id="sname" placeholder="Surname" required> <br><br>
+        </div>
+        <label for="date" id="dob">Date of birth :</label> <br>
+        <select name="date" id="date" required>
+            <option value="date">01</option>
+            <option value="date">02</option>
+            <option value="date">03</option>
+            <option value="date">04</option>
+            <option value="date">05</option>
+            <option value="date">06</option>
+            <option value="date">07</option>
+            <option value="date">08</option>
+            <option value="date">09</option>
+            <option value="date">10</option>
+            <option value="date">11</option>
+            <option value="date">12</option>
+            <option value="date">13</option>
+            <option value="date">14</option>
+            <option value="date">15</option>
+            <option value="date">16</option>
+            <option value="date">17</option>
+            <option value="date">18</option>
+            <option value="date">19</option>
+            <option value="date">20</option>
+            <option value="date">21</option>
+            <option value="date">22</option>
+            <option value="date">23</option>
+            <option value="date">24</option>
+            <option value="date">25</option>
+            <option value="date">26</option>
+            <option value="date">27</option>
+            <option value="date">28</option>
+            <option value="date">29</option>
+            <option value="date">30</option>
+            <option value="date">31</option>
+        </select>
+        <select name="month" id="month" required>
+            <option value="month">january</option>
+            <option value="month">february</option>
+            <option value="month">march</option>
+            <option value="month">april</option>
+            <option value="month">may</option>
+            <option value="month">june</option>
+            <option value="month">july</option>
+            <option value="month">august</option>
+            <option value="month">september</option>
+            <option value="month">october</option>
+            <option value="month">november</option>
+            <option value="month">december</option>
+        </select>
+        <select name="year" id="year" required>
+            <option value="year">2024</option>
+            <option value="year">2023</option>
+            <option value="year">2022</option>
+            <option value="year">2021</option>
+            <option value="year">2020</option>
+            <option value="year">2019</option>
+            <option value="year">2018</option>
+            <option value="year">2017</option>
+            <option value="year">2016</option>
+            <option value="year">2015</option>
+            <option value="year">2014</option>
+            <option value="year">2013</option>
+        </select>
+
+        <br>
+        <label for="Gender" id="genderCategory">Gender :</label>
+        <br>
+    <div id="female">
+        Female
+        <input type="radio"  id="Gender" name="Gender" required> 
+    </div>
+    <div id="male"> 
+        Male
+        <input type="radio"  id="Gender" name="Gender" required> 
+    </div>
+    <div id="custom">
+        Custom 
+        <input type="radio"  id="Gender" name="Gender" required> <br>
+    </div>
+    
+        <input type="number/email" name="number" id="number_email" placeholder="Mobile number or email address" required>
+        <input type="password" name="newPassword" id="newPassword" placeholder="New password" required>
+    
+        
+        <label for="paragraph" id="paragraph1">People who use our service may have uploaded your contact information to Facebook.
+             <a href="#" style="text-decoration: none;"> Learn more.</a></label> 
+        <br>        
+        <label for="paragraph" id="paragraph2">By clicking Sign Up, you agree to our <a href="#" style="text-decoration: none;">Terms, Privacy Policy</a> and <a href="#" style="text-decoration: none;">Cookies Policy.</a>
+             You may receive SMS notifications from us and can opt out at any time.</label>
+         
+    
+        <a href="https://www.achieversit.com/"></a><input type="submit" id="SingUp" value="Sign Up"></a> 
+         <br>
+
+        <a href="#" style="font-size: smaller; text-decoration: none;">Already have an account?</a>
+
+    </div>
+</body>
+</html>
